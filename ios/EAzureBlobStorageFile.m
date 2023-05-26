@@ -117,7 +117,7 @@ RCT_EXPORT_METHOD(uploadFile:(NSDictionary *)options
 RCT_EXPORT_METHOD(configure:(NSString *)account_name
          key:(NSString *)account_key
          container:(NSString *)conatiner_name
-         token:(NSNumber *)sas_token)
+         token:(nonnull NSNumber *)sas_token)
 {
   ACCOUNT_NAME = account_name;
   ACCOUNT_KEY = account_key;
