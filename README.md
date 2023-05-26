@@ -13,7 +13,7 @@
 import React, { Component } from 'react';
 import { Button, StyleSheet, ScrollView, View, Image, TouchableOpacity, Platform } from 'react-native';
 import { EAzureBlobStorageFile } from 'react-native-azure-blob-storage';
-import CameraRoll from "@react-native-community/cameraroll";
+import { CameraRoll } from "@react-native-camera-roll/camera-roll";
 
  class App extends Component {
   state = {
@@ -24,7 +24,7 @@ import CameraRoll from "@react-native-community/cameraroll";
       "Account Name", //Account Name
       "Account Key", //Account Key
       "images", //Container Name
-       false //SAS Token 
+       0 //SAS Token non-0 repsent true, 0 repsent false
     );
   }
   _handleButtonPress = () => {
